@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".admin.EditFitnesFragment"
+    android:paddingVertical="150dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/EditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Fitnes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Fitnes Name"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/EditTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:endIconMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_fitness_center_24"
+                android:drawableTint="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/nameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/category"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_category_24"
+                android:drawableTint="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/durORrepLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="durORrep"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/categoryLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/durORrep"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_repeat_24"
+                android:drawableTint="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Update Fitnes"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/durORrepLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
